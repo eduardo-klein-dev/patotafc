@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1976d2;
+    color: #fff;
+    padding: 1rem;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.cabecalho button {
+    background-color: #fff;
+    color: #1976d2;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cabecalho button:focus {
+    outline: 2px solid #000;
+}
+
+.dark-mode .cabecalho {
+    background-color: #111;
+    color: #fff;
+}
+
+.dark-mode .cabecalho button {
+    background-color: #444;
+    color: #fff;
+}
+
+.conteudo {
+    padding: 2rem;
+}
+
+.lista-dias h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dia {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dia h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.dia ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dia li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.dia button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dia button:focus {
+    outline: 2px solid #000;
+}
+
+.dark-mode .dia {
+    background-color: #222;
+    color: #fff;
+    border-color: #444;
+}
+
+.dark-mode .dia li {
+    border-bottom: 1px solid #555;
+}
+
+.dark-mode .dia button {
+    background-color: #aa0000;
+    color: #fff;
+}

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 2px solid #000;
+}
+
+.accessibility-toggle {
+    margin-top: 1rem;
+    background-color: #555;
+    font-size: 0.9rem;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode .login-container {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="password"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: #fff;
+}
+
+.login-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.login-logo img {
+    width: 100px;
+}
+
+.dark-mode .login-logo img {
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}

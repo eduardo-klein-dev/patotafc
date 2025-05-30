@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.cadastro-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .cadastro-container {
+    background-color: #222;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+legend {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="tel"],
+.dark-mode input[type="email"],
+.dark-mode input[type="password"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+button {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #155a9c;
+}
+
+button:focus {
+    outline: 2px solid #000;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: #fff;
+}
+
+.botao-acessibilidade {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #555;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dark-mode .botao-acessibilidade {
+    background-color: #888;
+    color: #000;
+}

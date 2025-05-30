@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1976d2;
+    color: #fff;
+    padding: 20px;
+}
+
+.cabecalho .saudacao h2,
+.cabecalho .saudacao p {
+    margin: 0;
+}
+
+.cabecalho .acoes .botao {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #1976d2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cabecalho .acoes .botao:focus {
+    outline: 2px solid #000;
+}
+
+.dark-mode .cabecalho {
+    background-color: #111;
+    color: #fff;
+}
+
+.dark-mode .botao {
+    background-color: #444;
+    color: #fff;
+}
+
+.conteudo {
+    padding: 2rem;
+}
+
+.calendario h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.semana {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.dia {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dia:hover {
+    background-color: #e3f2fd;
+}
+
+.dia strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.dia ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dia li {
+    padding: 0.3rem 0;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.dia li:hover {
+    background-color: #bbdefb;
+}
+
+.dark-mode .dia {
+    background-color: #222;
+    color: #fff;
+    border-color: #444;
+}
+
+.dark-mode .dia li:hover {
+    background-color: #444;
+}
+
+#botaoAcessibilidade,
+#botaoSair {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #1976d2;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+}
+
+.dark-mode #botaoAcessibilidade,
+.dark-mode #botaoSair {
+    background-color: #555;
+    color: #fff;
+    border: none;
+}
+
+.background {
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Ocupa toda a largura da tela */
+    height: 100vh;
+    /* Mantém o fundo sempre ocupando a tela */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente */
+    display: none;
+    /* Ativa o flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Começa do topo */
+    z-index: 9999;
+    /* Mantém sobre os outros elementos */
+    color: white;
+    overflow-y: auto;
+    /* Permite rolagem vertical quando necessário */
+}
+
+.bodyReserva {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.bodyReserva h3,
+.bodyReserva label {
+    color: #000;
+}
+
+.bodyReserva h4 {
+    color: #555;
+}
+
+.input {
+    margin-top: 20px;
+}
+
+.input label {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.line {
+    margin-top: 20px;
+}
+
+.textReserva {
+    display: flex;
+    flex-direction: column;
+}
+
+.sucessoReserva {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sucessoReserva h5 {
+    color: black;
+}
+
+.dark-mode .bodyReserva {
+    background-color: #222;
+    border-color: #444;
+    color: #fff;
+}
+
+.dark-mode .bodyReserva h3,
+.dark-mode .bodyReserva h4,
+.dark-mode .bodyReserva label,
+.dark-mode .sucessoReserva h5 {
+    color: #fff;
+}
+
+.dark-mode .bodyReserva input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.dark-mode .sucessoReserva {
+    background-color: #222;
+    border-color: #444;
+}
